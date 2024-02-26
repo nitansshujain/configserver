@@ -5,8 +5,8 @@ accounts:
   message: "Welcome to JainBank accounts related prod APIs "
   contactDetails:
     name: "Reine Aishwarya - Product Owner"
-#    email: "reine_aishwarya@gmail.com"
-    email: "{cipher}a492a8d3150737d4043c112c1ffecde00336e875e19d9d1e55f2d9904bf6a53f6f5958c1925290ab17e381e19aa500e2"
+    email: "reine_aishwarya@gmail.com"
+#    email: "{cipher}a492a8d3150737d4043c112c1ffecde00336e875e19d9d1e55f2d9904bf6a53f6f5958c1925290ab17e381e19aa500e2"
   onCallSupport:
     - (453) 392-4829
     - (236) 203-0384
