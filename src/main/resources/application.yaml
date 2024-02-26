@@ -3,12 +3,22 @@ spring:
     name: "configserver"
   profiles:
     active: native
+#    active: git
   cloud:
     config:
       server:
+        # Fetching configuration files via Git
+#        git:
+#          uri: https://github.com/nitansshujain/configserver.git
+#          default-label: master   # default-branch
+#          timeout: 5
+#          clone-on-start: true
+#          force-pull: true
         native:
-#          search-locations: "classpath:/config" # config is the folder_name
-          search-locations: "file:///C://Users//nitanssj//IdeaProjects//Microservices//config_files" # We have to add file:/// then file_location; Keep a look at the '/'s
+          search-locations: "classpath:/config" # config is the folder_name
+#          search-locations: "file:///C://Users//nitanssj//IdeaProjects//Microservices//config_files" # We have to add file:/// then file_location; Keep a look at the '/'s
 
 server:
   port: 8071
+encrypt:
+  key: "NitansshuJain1504"
