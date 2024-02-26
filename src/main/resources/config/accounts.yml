@@ -1,0 +1,17 @@
+build:
+  version: "1.0"
+
+accounts:
+  message: "Welcome to JainBank accounts related local APIs "
+  contactDetails:
+    name: "Nitansshu Jain - Developer"
+    email: "nitansshujain@gmail.com"
+  onCallSupport:
+    - (+91) 9721241204
+
+
+
+
+###### To run in the browser at port 8080
+#http://localhost:8080/h2-console
+#http://localhost:8080/swagger-ui/index.html

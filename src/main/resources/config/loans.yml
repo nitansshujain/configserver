@@ -1,0 +1,16 @@
+build:
+  version: "3.0"
+
+loans:
+  message: "Welcome to JainBank loans related local APIs "
+  contactDetails:
+    name: "Amaal Grega - Developer"
+    email: "amaalgrega@gmail.com"
+  onCallSupport:
+    - (452) 456-2176
+    - (546) 764-8934
+
+
+###### To run in the browser at port 8090
+#http://localhost:8090/h2-console
+#http://localhost:8090/swagger-ui/index.html
