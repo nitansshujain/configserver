@@ -33,21 +33,20 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
-            <version>2.2.224</version>
-            <scope>compile</scope>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <scope>runtime</scope>
         </dependency>
-<!--        This dependency is added to all the MSs, so changes can be reflected auto by making changes to one MS only.-->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-bus-amqp</artifactId>
-        </dependency>
-<!--        This dependency will be added to the config server only. This is a REST API path exposed by the spring cloud config server only, but not by the actuator -->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-config-monitor</artifactId>
-        </dependency>
+<!--        This dependency is added to all the MSs, so changes can be reflected auto by making changes to one MS only. -->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.cloud</groupId>-->
+<!--            <artifactId>spring-cloud-starter-bus-amqp</artifactId>-->
+<!--        </dependency>-->
+<!--This dependency will be added to the config server only. This is a REST API path exposed by the spring cloud config server only, but not by the actuator. -->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.cloud</groupId>-->
+<!--            <artifactId>spring-cloud-config-monitor</artifactId>-->
+<!--        </dependency>-->
     </dependencies>
     <dependencyManagement>
         <dependencies>
@@ -75,8 +74,7 @@
                 <version>3.4.0</version>
                 <configuration>
                     <to>
-                        <image>nitansshujain/${project.artifactId}:s6</image>
-<!--                        mvn compile jib:dockerBuild-->
+                        <image>nitansshujain/${project.artifactId}:s7</image>
                     </to>
                 </configuration>
             </plugin>
