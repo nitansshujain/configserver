@@ -2,7 +2,7 @@ build:
   version: "1.0"
 
 accounts:
-  message: "Welcome to JainBank accounts related local APIs "
+  message: "Welcome to JainBank accounts related remote APIs "
   contactDetails:
     name: "Nitansshu Jain - Developer"
     email: "nitansshujain@gmail.com"
