@@ -38,7 +38,7 @@
             <version>2.2.224</version>
             <scope>compile</scope>
         </dependency>
-<!--        This dependency is added to all the MSs, so changes can be reflected auto by making changes to one MS only.&ndash;&gt;-->
+<!--        This dependency is added to all the MSs, so changes can be reflected auto by making changes to one MS only.-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-bus-amqp</artifactId>
@@ -75,7 +75,8 @@
                 <version>3.4.0</version>
                 <configuration>
                     <to>
-                        <image>nitansshujain/${project.artifactId}:s4</image>
+                        <image>nitansshujain/${project.artifactId}:s6</image>
+<!--                        mvn compile jib:dockerBuild-->
                     </to>
                 </configuration>
             </plugin>
