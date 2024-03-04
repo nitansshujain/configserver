@@ -1,0 +1,12 @@
+# This file is needed to configure with the configserver
+server:
+  port: 8070
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    fetchRegistry: false # When you don't want Eureka server to fetch the registry of other MS. It will never call other MS details (by default, true)
+    registerWithEureka: false # Don't register with yourself and don't expose your details into the registry of service discovery
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
