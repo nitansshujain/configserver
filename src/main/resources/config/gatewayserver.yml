@@ -1,0 +1,12 @@
+# This file is needed to configure with the eurekaserver (it helps for registry and discovery) via configserver
+server:
+  port: 8072
+
+eureka:
+  instance:
+    preferIpAddress: true   # Accounts MS will register with my Eureka server by using the IP, so other MS can connect with this MS using the IP
+  client:
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
+     defaultZone: http://localhost:8070/eureka/
